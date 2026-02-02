@@ -2,15 +2,15 @@
 
 Official repository for two complementary lines of research:
 
-1. **S³-CoT**: Self-Sampled Succinct Reasoning Enables Efficient Chain-of-Thought LLMs
-2. **From Latent Signals to Reflection Behavior:** Tracing Meta-Cognitive Activation Trajectory in R1-Style LLMs. 
+1. S³-CoT: Self-Sampled Succinct Reasoning Enables Efficient Chain-of-Thought LLMs
+2. From Latent Signals to Reflection Behavior: Tracing Meta-Cognitive Activation Trajectory in R1-Style LLMs. 
 
 ---
 
 ## 🔥 News
 
-* **(TBD)**: We will open-source **model checkpoints** and **self-sampled data**.  
-* **2026-02**: Released two preprints on Arxiv. 
+* **(TBD)**: We plan to open-source **model checkpoints** and **self-sampled data** first, and then open-source the related code after the paper is accepted.
+* **2026-02**: Released preprints (**S³-CoT** and **Meta-Cognitive**) on Arxiv. 
 
 ---
 
@@ -65,7 +65,11 @@ Official repository for two complementary lines of research:
 
 * **Models:** `[HuggingFace]`
 * **Data:** `[HuggingFace]`
+* **Code:** The training script will be open-sourced after the paper is accepted.
 
+### Meta-Cognitive
+
+* **Code:** The related analysis code will be open-sourced after the paper is accepted.
 
 ---
 
