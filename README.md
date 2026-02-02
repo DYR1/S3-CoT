@@ -1,4 +1,4 @@
-# S³-CoT
+# S³-CoT & Meta-Cognitive
 
 Official repository for two complementary lines of research:
 
