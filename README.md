@@ -1,3 +1,5 @@
+![S3-CoT Overview](s3-cot.png)
+
 # S³-CoT & Meta-Cognitive
 
 Official repository for two complementary lines of research:
