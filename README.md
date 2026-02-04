@@ -9,7 +9,7 @@ Official repository for two complementary lines of research:
 
 ## 🔥 News
 
-* **(TBD)**: We plan to open-source **model checkpoints** and **self-sampled data** first, and then open-source the related code after the paper is accepted.
+* **(TBD)**: We have open-sourced **model checkpoints** (https://huggingface.co/yrdu) first, and then open-source the **self-sampled data**  and **related code** after the paper is accepted.
 * **2026-02**: Released preprints (**S³-CoT** and **Meta-Cognitive**) on Arxiv. 
 
 ---
@@ -63,7 +63,15 @@ Official repository for two complementary lines of research:
 
 ### S³-CoT
 
-* **Models:** `[HuggingFace]`
+* **Model Checkpoints:**
+  
+| Base Model | Our Trained Model | Link |
+|------------|---------------|------|
+| DeepSeek-R1-Distill-Qwen-7B | S3-CoT-DeepSeek-R1-Distill-Qwen-7B | https://huggingface.co/yrdu/S3-CoT-DeepSeek-R1-Distill-Qwen-7B |
+| Qwen2.5-7B-Instruct | S3-CoT-Qwen2.5-7B-Instruct | https://huggingface.co/yrdu/S3-CoT-Qwen2.5-7B-Instruct |
+| Llama-3.1-8B-Instruct | S3-CoT-Llama-3.1-8B-Instruct | https://huggingface.co/yrdu/S3-CoT-Llama-3.1-8B-Instruct |
+| Qwen3-4B-Thinking-2507| S3-CoT-Qwen3-4B-Thinking-2507 | https://huggingface.co/yrdu/S3-CoT-Qwen3-4B-Thinking-2507 |
+
 * **Data:** `[HuggingFace]`
 * **Code:** The training script will be open-sourced after the paper is accepted.
 
