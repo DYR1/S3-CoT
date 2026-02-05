@@ -111,7 +111,7 @@ output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist()
 output_content = tokenizer.decode(output_ids, skip_special_tokens=True)
 ```
 
-* **Data:** `[HuggingFace]`
+* **Data:** [self-sampled data](https://huggingface.co/datasets/yrdu/S3-CoT-Self-Sampled-Data)
 * **Code:** The training script will be open-sourced after the paper is accepted.
 
 ### Meta-Cognitive
