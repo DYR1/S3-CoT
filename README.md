@@ -11,8 +11,8 @@ Official repository for two complementary lines of research:
 
 ## 🔥 News
 
-* **(TBD)**: We have open-sourced **model checkpoints** (https://huggingface.co/yrdu) first, and then open-source the **self-sampled data**  and **related code** after the paper is accepted.
-* **2026-02**: Released preprints (**S³-CoT** and **Meta-Cognitive**) on Arxiv. 
+* **(TBD)**: We have open-sourced [**model checkpoints** and **self-sampled data**](https://huggingface.co/yrdu) first, and then open-source **related code** after the paper is accepted.
+* **2026-02**: Released preprints ([**S³-CoT**](https://arxiv.org/abs/2602.01982) and [**Meta-Cognitive**](https://www.arxiv.org/abs/2602.01999)) on Arxiv. 
 
 ---
 
