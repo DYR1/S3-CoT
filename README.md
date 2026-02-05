@@ -86,9 +86,8 @@ system2_template = " Please reason step by step, and put your final answer withi
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
-    torch_dtype="auto",
     device_map="auto",
-    dtype="bfloat16",
+    torch_dtype="bfloat16",
 )
 generation_config={"xxx"}
 prompt = "xxx"
