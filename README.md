@@ -74,6 +74,44 @@ Official repository for two complementary lines of research:
 | Llama-3.1-8B-Instruct | S3-CoT-Llama-3.1-8B-Instruct | https://huggingface.co/yrdu/S3-CoT-Llama-3.1-8B-Instruct |
 | Qwen3-4B-Thinking-2507| S3-CoT-Qwen3-4B-Thinking-2507 | https://huggingface.co/yrdu/S3-CoT-Qwen3-4B-Thinking-2507 |
 
+* **Inference Template:**
+we provide System 1 and System 2 templates used in our training. During inference, please use the **System 1 template** to reproduce the results reported in our paper.
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+system1_template = " Please provide as a brief reasoning process as possible, and put your final answer within \\boxed{}"
+system2_template = " Please reason step by step, and put your final answer within \\boxed{}"
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype="auto",
+    device_map="auto",
+    dtype="bfloat16",
+)
+generation_config={"xxx"}
+prompt = "xxx"
+
+messages = [
+    {"role": "user", "content": prompt+system1_template}
+]
+text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True
+)
+
+model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+generated_ids = model.generate(
+    **model_inputs,
+    **generation_config,
+)
+
+output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist()
+output_content = tokenizer.decode(output_ids, skip_special_tokens=True)
+```
+
 * **Data:** `[HuggingFace]`
 * **Code:** The training script will be open-sourced after the paper is accepted.
 
